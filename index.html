@@ -58,6 +58,46 @@
             <img src="assets/main_image.png" alt="Fuelwell" />
           </div>
         </section>
+        <section class="main_order">
+          <h2>Оформить заказ</h2>
+          <form name="order" method="POST" action="//httpbin.org/post">
+            <fieldset>
+              <legend>Следование</legend>
+              <label for="departureAddress">Адрес отправления</label>
+              <input
+                class="field"
+                type="text"
+                name="departureAddress"
+                id="departureAddress"
+                required
+              />
+              <label for="destinationAddress">Адрес назначения</label>
+              <input
+                class="field"
+                type="text"
+                name="destinationAddress"
+                id="destinationAddress"
+                required
+              />
+            </fieldset>
+            <fieldset>
+              <legend>Тип билета</legend>
+              <div class="radio_container">
+                <input
+                  type="radio"
+                  name="type"
+                  id="childlike"
+                  value="childlike"
+                />
+                <label for="childlike">Детский</label>
+              </div>
+              <div class="radio_container">
+                <input type="radio" name="type" id="adult" value="adult" />
+                <label for="adult">Взрослый</label>
+              </div>
+            </fieldset>
+          </form>
+        </section>
       </div>
     </main>
   </body>
